@@ -14,15 +14,15 @@ function Section(props) {
 
         <BtnContainer>
         <Fade direction='up'>
-        <ButtonGrp>
-            <LeftButton>
-                {props.LeftButtonTxt}
-            </LeftButton>
-                {props.RightButtonTxt &&
-            <RightButton>
-                {props.RightButtonTxt} 
-            </RightButton>}
-        </ButtonGrp>
+            <ButtonGrp>
+                <LeftButton>
+                    {props.LeftButtonTxt}
+                </LeftButton>
+                    {props.RightButtonTxt &&
+                <RightButton>
+                    {props.RightButtonTxt} 
+                </RightButton>}
+            </ButtonGrp>
         </Fade>
         <DownArrow src="/images/down-arrow.svg"></DownArrow>
         </BtnContainer>
@@ -49,6 +49,10 @@ const Wrap = styled.div`
 
 const ItemText = styled.div`
     padding-top: 15vh;
+
+    h1{
+        font-size: 2.5rem;
+    }
 `
 
 const ButtonGrp = styled.div`
@@ -81,7 +85,7 @@ const RightButton = styled(LeftButton)`
     opacity: 0.7;
 `
 const DownArrow = styled.img`
-    height: 40px;
+    height: 35px;
     margin-top: 20px;
     animation: animateDown infinite 1.5s;
 `
