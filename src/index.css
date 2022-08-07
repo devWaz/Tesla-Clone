@@ -12,6 +12,14 @@ body{
   overflow-x: hidden;
 }
 
+.logo{
+  width: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
 @keyframes animateDown {
   0% , 20% , 50% , 80% , 100% {
     transform: translateY(0);
