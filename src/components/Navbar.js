@@ -12,20 +12,20 @@ function Navbar() {
 
   return (
     <Container>
-            <a href='#'>
+            <a href='/'>
                 <img src="/images/teslaLogo.svg" alt="Tesla Logo" className='logo' />
             </a>
             <Menu>
             {cars && cars.map((car , index) =>(
-                    <a href="#" key={index}>{car}</a>
+                    <a href="/" key={index}>{car}</a>
                 ))}
-                <a href="#">Solar Roof</a>
-                <a href="#">Solar Panels</a>
+                <a href="/">Solar Roof</a>
+                <a href="/">Solar Panels</a>
             </Menu>
             <RightMenu>
                 <section>
-                <a href="#">Shop</a>
-                <a href="#">Account</a>
+                <a href="/">Shop</a>
+                <a href="/">Account</a>
                 </section>
             <IconMenu onClick={() => setnavBtnStatus(true)}/>
             </RightMenu>
@@ -35,16 +35,16 @@ function Navbar() {
                     <CloseBtn onClick={() => setnavBtnStatus(false)}/>
                 </CloseBtnContainer>
                 {cars && cars.map((car , index) =>(
-                    <li key={index}><a href="#"> { car }</a></li>
+                    <li key={index}><a href="/"> { car }</a></li>
                 ))}
-                <li><a href="#">Existing Inventory</a></li>
-                <li><a href="#">Used Inventory</a></li>
-                <li><a href="#">Trade-in</a></li>
-                <li><a href="#">Cybertruck</a></li>
-                <li><a href="#">Semi</a></li>
-                <li><a href="#">Test Drive</a></li>
-                <li><a href="#">Find Us</a></li>
-                <li><a href="#">Support</a></li>
+                <li><a href="/">Existing Inventory</a></li>
+                <li><a href="/">Used Inventory</a></li>
+                <li><a href="/">Trade-in</a></li>
+                <li><a href="/">Cybertruck</a></li>
+                <li><a href="/">Semi</a></li>
+                <li><a href="/">Test Drive</a></li>
+                <li><a href="/">Find Us</a></li>
+                <li><a href="/">Support</a></li>
             </SideNav>
 
         </Container>
