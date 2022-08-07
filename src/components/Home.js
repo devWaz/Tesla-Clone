@@ -6,6 +6,9 @@ function Home() {
   return (
     <Container>
         <Section/>
+        <Section/>
+        <Section/>
+        <Section/>
     </Container>
   )
 }
@@ -14,6 +17,4 @@ export default Home
 
 const Container = styled.div`
     height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
 `
